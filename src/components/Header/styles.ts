@@ -4,6 +4,8 @@ import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 0.5rem;
+    background-color: #6b8e23;
+
 
   .ant-row-space-between {
     align-items: center;
@@ -49,12 +51,70 @@ export const NotHidden = styled("div")`
   @media only screen and (max-width: 890px) {
     display: none;
   }
+
+  /* Add color to text elements inside NotHidden */
+  span {
+    color: white; /* Change this to your desired color */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+    transition: all 0.3s ease-in-out; /* Optional: Add transition */
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: brown;
+      text-decoration: underline; /* Use solid underline */
+    }
+  }
+
+  button {
+    color: white; /* Change this to your desired color */
+    background-color: brown; /* Change this to your desired background color */
+    border: none; /* Optional: Remove border */
+    padding: 10px 20px; /* Optional: Add padding */
+    border-radius: 5px; /* Optional: Add border radius */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Optional: Add transition for hover effect */
+    outline: none; /* Remove default outline */
+
+    &:hover {
+      background-color: darkred; /* Change this to your desired hover background color */
+      border: 1px solid black; /* Optional: Remove border */
+    }
+
+    &:focus {
+      outline: none; /* Remove outline on focus */
+    }
+  }
 `;
+
 
 export const Menu = styled("h5")`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: brown; /* Change this to your desired color */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: all 0.3s ease-in-out; /* Add transition */
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: green; /* Change this to your desired hover color */
+    text-decoration: underline; /* Use solid underline */
+  }
+    /* Add color to text elements inside NotHidden */
+  a {
+    color: #6b8e23; /* Change this to your desired color */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+    transition: all 0.3s ease-in-out; /* Optional: Add transition */
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: brown;
+      text-decoration: underline; /* Use solid underline */
+    }
+  }
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
